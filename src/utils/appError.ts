@@ -1,3 +1,4 @@
+// This will handle errors for the whole application.
 export default class AppError extends Error {
   status: string;
   isOperational: boolean;

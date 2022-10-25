@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import config from 'config';
-
+// This will help connecting to mongodb. Its image is pulled in docker
+// compose file.
 const dbUrl = `mongodb://${config.get('dbName')}:${config.get(
   'dbPass'
 )}@localhost:6000/jwtAuth?authSource=admin`;

@@ -7,6 +7,7 @@ import cookieParser from 'cookie-parser';
 import connectDB from './utils/connectDb';
 import userRouter from './routes/user.route';
 import authRouter from './routes/auth.route';
+import ethRouter from './routes/eth.route';
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use(
 // 5. Routes
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
+app.use('/api/eth', ethRouter);
 
 // Testing
 app.get('/ethscan', (req: Request, res: Response, next: NextFunction) => {

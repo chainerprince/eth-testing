@@ -1,5 +1,5 @@
 import { createClient } from 'redis';
-
+// Used redis to keep track of currently logged in user.
 const redisUrl = `redis://localhost:6379`;
 const redisClient = createClient({
   url: redisUrl,
