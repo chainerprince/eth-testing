@@ -4,6 +4,11 @@
 An authentication system with typescript,Express,Mongodb,Redis,Web3js,etc
 
 
+## usage
+
+
+
+
 ## Installation
 
 Install eth-test by cloning the project at: [Here](https://github.com/chainerprince/eth-testing.git) 
@@ -11,7 +16,7 @@ Follow the below instructions to get it running locally
 ```bash  
   cd eth-testing
   yarn install
-  docker-compose start -d
+  docker-compose up -d
   yarn start
 ```
     
@@ -27,10 +32,13 @@ To run tests, run the following command
 ## Features
 
 - Login
+http://localhost:8000/api/auth/login
 - Register
+http://localhost:8000/api/auth/register
 - Get currently logged in user
+http://localhost:8000/api/auth/me
 - Get user transaction
-
+http://localhost:8000/api/eth
 
 ## Author
 
